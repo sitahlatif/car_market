@@ -1,0 +1,734 @@
+body{
+	
+background: #eee
+}
+img{
+	 filter: grayscale(1);
+	display: block;
+	height: 20rem;
+	width: 30rem;
+    opacity: 0.7;
+
+}
+img:hover{
+    filter: none
+}
+.header {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(0,128,128,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%);
+  color:linear-gradient(10deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+;
+  font-size: 100px;
+  letter-spacing: 2px;
+  font-family: Lobster;
+}
+.card-title{
+	font-family:'Raleway', sans-serif;
+	color: black;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.row {
+
+  justify-content: center;
+  align-items: center;  
+  min-width: 480px;
+  width: 50%;
+  height: 500px;
+}
+.navbar{
+	height: 60px
+
+
+}
+.card {
+  /*position: relative;
+  background-color: #FFFFFF;
+  
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  transition: height 0.3s, box-shadow 0.3s;
+	
+ */ background-color: whitesmoke;
+ border-bottom-left-radius: 10px;
+     height: 390px;
+  width: 90px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: 30px;
+     box-shadow: 0px 0px 120px -25px rgba(0,0,0, 0.5);
+     transition: all 0.4s;
+     
+ 
+}
+
+.card:hover {
+  height: 410px;
+  box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.5);
+}
+.icon{
+    float: right;
+    margin-bottom: 0;
+}
+.card-image {
+  /* center horizontally overflown image */
+  filter: gray;
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+
+  height: 220px;
+  min-width: 100%;
+  transition: height 0.3s, opacity 0.3s;
+}
+.card-image.selected {
+  height: 470px;
+  opacity: 1.5;
+  filter: none;
+}
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  height: 130px;
+  padding: 10px 15px;
+  font-family: Helvetica;
+}
+
+.card-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.card-title {
+  font-family: 'Raleway', sans-serif;
+}
+.card-author {
+  font-size: 14px;
+  color: #BAB096;
+  transition: color 0.3s;
+}
+.card-author.selected {
+  color: #6a6456;
+}
+.card-detail {
+  
+  background-color: whitesmoke;
+  height: 100%;
+  width: 95%;
+  
+  overflow: hidden;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.8);
+  transition: height 0.3s, box-shadow 0.9s;
+	
+margin: 30px
+}
+.card-title-detail {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 60px;
+  letter-spacing: 4px;
+  background-color:linear-gradient(45deg, rgba(0,128,128,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%);
+
+}
+.card-img-top-detail{
+	height: 100%;
+}
+.card-text-detail {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.btn {
+  background-color: #1abc9c; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 11px 13px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: grey;
+}
+.form-style-10{
+	width:70%;
+	padding:30px;
+	margin:40px auto;
+	background:  whitesmoke;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: whitesmoke;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1{
+    opacity: 0.7;
+	background: #1abc9c;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 20px 'Raleway', Helvetica, sans-serif;
+	color: #888;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+
+
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:6px;
+	border: 1px solid gray;
+	box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.90);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color: #2A88AD;
+	margin-bottom: 5px;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+	background: #1abc9c;
+	padding: 10px 25px 10px 25px;
+    margin-left:40rem;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+#logo a {
+   font-family: Lobster;
+    display: initial;
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: 5px;
+    color: #1abc9c;
+   
+  
+    
+}
+/* Since we'll have the "ul li" "float:left"
+* we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Removing padding, margin and "list-style" from the "ul",
+* and adding "position:reltive" */
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+
+/* Positioning the navigation items inline */
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+
+
+/* Styling the links */
+
+nav ul li a {
+  color: #000;
+  text-transform: capitalize;
+  font-weight:400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background: transparent;
+  padding: 7px 28px;
+  display: inline-block;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+nav ul li ul li:hover {
+  background: #f8f9fa;
+}
+
+.menu li .drop-text:hover {
+  color: #000;
+  border: none;
+}
+
+
+/* Background color change on Hover */
+
+
+/*.menu li.active a,.menu li a:hover{border-bottom: 1px solid #d4d4d4;}*/
+
+.menu li a:hover {
+  opacity: 0.8;
+  color: #000;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+
+/* Hide Dropdowns by Default
+* and giving it a position of absolute */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 33px;
+  background:#e8e8e8;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: -1px 1px 5px black;
+}
+/* Display Dropdowns on Hover */
+
+nav ul li:hover>ul {
+  display: inherit;
+}
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+nav ul ul li a {
+  color: #000;
+  padding: 5px 10px;
+  display: block;
+  background: transparent;
+}
+/* Second, Third and more Tiers	
+* We move the 2nd and 3rd etc tier dropdowns to the left
+* by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+
+li>a:only-child:after {
+  content: '';
+}
+
+a.reqe-button {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+}
+/* Media Queries
+--------------------------------------------- */
+
+@media(max-width: 800px) {
+  nav a {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+    font-family: Lobster;
+  }
+  nav {
+    margin: 0;
+  }
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    padding: 6px 17px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    float: right;
+    background-color:#0ddbd1;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .menu .toggle {
+    float: none;
+    text-align: center;
+    margin: auto;
+    max-width: 138px;
+    padding: 10px 18px;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .menu .toggle:hover {
+    color: #000;
+    opacity: .8;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .toggle:hover {
+    color: #000;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  label.toggle.toogle-2 {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #000;
+  }
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked+ul {
+    display: block;
+    background: #fff;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+  }
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: transparent;
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 15px;
+  }
+  /* 
+nav ul li ul li .toggle,
+nav ul ul a {
+background-color: #212121;
+} */
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+  /* Hide menus on hover */
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+  nav a {
+    color: #000;
+    font-size: 15px;
+  }
+  .menu li.active a,
+  .menu li a:hover {
+    background: transparent;
+  }
+}
+
+@media all and (max-width: 568px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 13px;
+  }
+}
+/*-- dropdown --*/
+/*--inner-banner -- */
+.main-banner {
+  text-align: center;
+  background: url(../media/b6.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height:350px;
+}
+
+.using-border {
+padding-top: 11em;
+}
+
+ul.short_ls li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul.short_ls li {
+  list-style: none;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size:44px;
+  color: #fff;
+  font-weight:600;
+}
+/*-- //inner-banner --*/
+/* banner */
+
+.main-top {
+  background: url(../images/b6.jpg) no-repeat bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 800px;
+}
+.headder-top {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+   background: rgba(255, 255, 255, 0.9);*/
+    padding: 1em 2em;
+    box-shadow: -1px -2px 6px black;
+	z-index:99;
+    font-family: Lobster
+}
+.style-banner {
+  padding-top:21em;
+  padding-right: 4em;
+
+}
+.two-demo-button p {
+    color: #dadada;
+    font-weight: 100;
+    padding-left: 29em;
+    line-height: 28px;
+    font-size: 16px;
+}
+.banner-right-txt{  text-align:right;}
+.banner-right-txt h4, h1 {
+    color: #ffeaea;
+    font-size: 2.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 51px;
+    letter-spacing: 7px;
+}
+.social-icons ul li a span,.footer-icons ul li a span {
+  color: #e0e0e0;
+  font-size: 20px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+}
+.social-icons ul li a span:hover,.footer-icons ul li a span:hover{
+    color: #cacaca;
+}
+.social-icons ul li {
+    display: block;
+    padding-top: 27px;
+    padding-left: 13px;
+}
+.view-buttn a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 400;
+    border-radius: 0px;
+    background-color:#0ddbd1;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 30px;
+}
+.view-buttn a:hover,button.btn1:hover,.sent-butnn:hover {
+    opacity: 0.8;
+}
+/*-- about --*/
+.about-w3layouts-left h6,.clients-w3pvt-txt h4 {
+    font-size: 20px;
+    color: #0ddbd1;
+    text-transform: capitalize;
+}
+.about-span-txt span {
+    font-size: 31px;
+    color: #fff;
+    line-height: 66px;
+}
+.about-span-txt{
+    background:#0ddbd1;
+}
+/*--//about-- */
+/*-- counter-- */
+.count-wthree-num {
+    padding: 4em 8em;
+    background: #0ddbd1;
+}
+.count-wthree-num h5 {
+    font-size: 35px;
+    color: #fff;
+} 
+.color-one {
+    background: #04eadf;
+}
+.color-two {
+    background: #01fbef;
+}
+.detail-wrap{
+	padding-top: 80px;
+}
+.name{
+    color: #1abc9c;
+    margin-left:6%;
+    
+}
+
+
