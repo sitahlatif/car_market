@@ -4,27 +4,30 @@
 {% endblock header%}
 
 {% block content%}
-
-	{% for car in cars %} 
-	<div class="card">
-    
-	 {%if  car.car_img.url != null %}
-              <img class="card-image" src="{{car.car_img.url}}">
-            {%endif%}
-      <div class="card-body">
-		<a href="{{car.get_absolute_url}}">
-			<h1 class="card-title text-uppercas">
+<div class="row">
+    {% for car in cars %} 
+    <div class="col-md-4">
+        <div class="card my-card">
+          {%if  car.car_img.url != null %}
+              <img class="card-img-top" src="{{car.car_img.url}}">
+          {%endif%}
+          <div class="card-body">
+            <a href="{{car.get_absolute_url}}">
+			<h1 class="card-title">
 				{{car.make}} - {{car.model}}
 				<small class="card-text">
 					{{car.year}}
 				</small>
 			</h1>
 		</a>
-	</div>
-		<hr>
-	</div>
-
-
-
-	{% endfor %}
-{% endblock content%}
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-center">
+                <a href="{% url 'car-detail' car.id %}" class="btn btn-outline-dark">View</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

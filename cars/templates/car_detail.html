@@ -10,5 +10,7 @@
 				{{car.year}}
 			</small>
 		</h1>
+		<a class="button-section" href="{% url 'car-update' car.id %}">Update Car</a>
+		<a class="button-section" href="{% url 'car-delete' car.id %}">Delete Car</a>
 		<hr>
 {% endblock content%}
